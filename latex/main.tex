@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage{epigraph}
+\usepackage{titlesec}
+
+\titleformat{\section}  % redefine \section
+  [block]               % shape
+  {\filcenter\normalfont\scshape} % format: centered, normal weight, small caps
+  {}                    % label (empty → unnumbered)
+  {0pt}                 % separation between label and title
+  {}                    % before-code
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\LARGE\scshape\@title \par} % big small caps title
+    \vskip 1em
+    {\large\scshape\@author \par} % smaller small caps author
+    \vskip 1em
+    {\normalsize\@date \par} % date in normal size
+  \end{center}
+}
+\makeatother
+
+\setlength{\epigraphwidth}{\textwidth}
+\setlength{\epigraphrule}{0pt}
+\renewcommand{\textflush}{flushleft}
+\renewcommand{\epigraphsize}{\itshape\normalsize}
+\renewcommand{\epigraphflush}{flushleft}
+\newcommand{\epigraphsource}[1]{--- {\small{\textit{#1}}}}
+
+\usepackage[
+  backend=biber,
+  notes,
+  dashed=false,
+  doi=false,
+  url=true,
+  isbn=false,
+  giveninits=true
+]{biblatex-chicago}
+\addbibresource{main.bib}
+
+\interfootnotelinepenalty=10000
+
+\title{Anthroponormativity}
+\author{Alex Grant}
+\date{\today}
+
+\begin{document}
+\onehalfspacing
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Three Great De-centerings}
+
+\section{Man is Dead}
+
+\section{Mind-Blindness and Human Bias}
+
+
+\newpage
+\printbibliography
+\end{document}
