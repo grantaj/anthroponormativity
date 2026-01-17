@@ -1,16 +1,16 @@
 \documentclass[12pt]{article}
-\usepackage{graphicx} % Required for inserting images
+\usepackage{graphicx}
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage{epigraph}
 \usepackage{titlesec}
 
-\titleformat{\section}  % redefine \section
-  [block]               % shape
-  {\filcenter\normalfont\scshape} % format: centered, normal weight, small caps
-  {}                    % label (empty → unnumbered)
-  {0pt}                 % separation between label and title
-  {}                    % before-code
+\titleformat{\section}
+  [block]
+  {\filcenter\normalfont\scshape}
+  {}
+  {0pt}
+  {}
 
 \titleformat{\subsection}
   [block]
@@ -29,11 +29,11 @@
 \makeatletter
 \renewcommand{\maketitle}{%
   \begin{center}
-    {\LARGE\scshape\@title \par} % big small caps title
+    {\LARGE\scshape\@title \par}
     \vskip 1em
-    {\large\scshape\@author \par} % smaller small caps author
+    {\large\scshape\@author \par}
     \vskip 1em
-    {\normalsize\@date \par} % date in normal size
+    {\normalsize\@date \par}
   \end{center}
 }
 \makeatother
@@ -67,66 +67,345 @@
 \maketitle
 
 \begin{abstract}
-
+Modernity has been shaped by a progressive sequence of decentrings
+that dislodge humanity from a position of assumed privilege. The rise of
+machine cognition intensifies this trajectory, revealing intelligence as
+an emergent and distributed process rather than a uniquely human
+essence. Anthroponormativity describes the prevailing assumption of the centrality of human intelligence in our definitions of mind. This assumption induces mind-blindness, an invisible bias against
+diverse ``unexpected minds''. Treating decentring as a generative
+shift rather than a loss, I advocate a stance of ``extreme empathy'' that
+resists mystification while widening moral and cultural attention to
+other minds. I position art-making as a living cultural
+process -- a social activity performed by artists and their
+communities, rather than the product of isolated genius. On this view,
+the question is no longer whether machines threaten creativity, but what
+forms of relationship and cultural life open when intelligence is
+understood as plural.
 \end{abstract}
 
-\section{Three Great De-centerings}
+\newpage 
+
+\section{Three Great De-centrings}
+Decentring is a recurring historical pattern: a crisis of meaning
+followed by an expansion of understanding.\autocite{kuhn1970} I consider
+a sequence of decentrings from Copernicus to Darwin to Turing
+that progressively reframe the position of humanity in our view of the
+world.
 
 \subsection{Copernicus}
 
-% Historical positioning and pre-copernicus worldview
-% What Copernicus revealed (and how)
-% Consequences: (1) religious/social/political (2) Scientific 2(a) epicycles and the almost-discovery of Fourier series by greek scientists - simplified by right frame of reference (2b) Einstein and consequences of a simple assumption
+The pre-Copernican worldview was a geocentric
+Aristotelian--Ptolemaic cosmos, with nested spheres carrying the Moon,
+planets, and stars, a perfect and unchanging heaven, and a corruptible
+terrestrial realm below. This cosmological exceptionalism was integrated into Christian
+social order and theology, lending humanity a privileged centre.
+\autocite{dreyer1906,grant2001} In that regime, the advance of knowledge
+was expected to fit the doxa of divine creation and the Aristotelian
+hierarchy rather than revise it. Copernicus began the reversal: a slow
+shift toward knowledge proceeding from empirical and mathematical
+coherence, even when it violated inherited authority.
+
+Copernicus revealed that this centre was a mistake. Heliocentrism
+reorganised the frame of reference itself, demonstrating that coherence
+emerges not by adding complexity but by altering the frame.
+\autocite{copernicus1543,kuhn1957} His 1543 proposal set the terms of
+the shift. The consequences were not merely
+astronomical but epistemic. Copernicus decoupled cosmology from theology
+and displaced scripture methodologically: biblical cosmology could now
+be treated as phenomenological rather than literal, while mathematical
+coherence became the higher authority. The deeper shift was from
+forcing philosophical and scientific thought to fit an unyielding
+theological picture of the world to revising that picture in light of
+observation and experiment. Scholastic authority was destabilised as
+knowledge moved from inherited frameworks toward empirical and
+mathematical testing.
+\autocite{westman1975,brooke1991}
+
+The disruption precedes overt theological conflict. Early reception was
+muted by technical obscurity and cautious framing, yet the shift in
+knowledge production was decisive: from inherited cosmological order to
+constructed mathematical representation. Humanity's cosmic centrality
+was implicitly undermined, and truth became increasingly specialised and
+exclusionary.
+\autocite{westman1975}
+This conflict becomes explicit when heliocentrism is later defended by
+Galileo as a claim about the physical motions of bodies rather than a
+mere mathematical device, provoking ecclesiastical backlash; his 1633
+trial and subsequent house arrest make the consequences concrete.
+\autocite{brooke1991,westman1975}
+
+On the scientific side, the lesson of frame is explicit. Epicycles\footnote{A mathematically elaborate system of deferents and epicycles that accumulated complexity to preserve geocentrism despite observational strain.}
+were not merely a technical blemish; they were a symptom of a misaligned
+frame of reference. Once the centre is reassigned, the mathematics
+simplifies and a different kind of scientific practice emerges: one in
+which coherence is purchased by changing the frame, not by adding ad hoc
+complexity.
+\autocite{dreyer1906} The same methodological shift echoes in later
+physics. Einstein's insistence on the constancy of the speed of light
+forces a new reference frame, yielding not only cleaner equations but an
+entirely new ontology of space and time, and ultimately a new theory of
+gravity in which curvature of spacetime replaces force.
+\autocite{einstein1905,einstein1916,susskind2017}
+
+For Westman, Copernicus destabilised religion and society not by
+denying God, but by \emph{transforming how truth itself could be known}.
+\autocite{westman1975}
 
 \subsection{Darwin}
 
-% Historical positioning and pre-darwin worldview
-% What Darwin revealed (and how)
-% Consequences (1) religious/social/political/ (2) scientific
+Darwin extends the decentring by dissolving biological exceptionalism.
+His achievement is explanatory, not merely biological: evolution by
+natural selection replaces divine design with an impersonal, law-like
+process. Teleology is removed from nature, and human exceptionalism is
+biologically undermined. Darwin's 1859 argument sets this decentring in
+motion.\autocite{ruse1979,dennett1995}
+
+This shift displaces creation narratives as sources of natural-historical
+truth and decouples moral order from cosmic order. Nature is indifferent
+to human ethics, and suffering and death are reframed as structural
+features of life rather than anomalies. Theodicy\footnote{The problem of why a good and all-powerful God would allow suffering.} becomes more difficult
+because suffering is no longer purposeful or exceptional.
+\autocite{ruse1979}
+
+Religious response fractures rather than collapses. Some theologians
+reinterpret doctrine to accommodate evolution, while others resist,
+creating a durable conflict that becomes institutionalised in successive
+movements from biblical literalism to scientific creationism to
+intelligent design. This fracture persists into the present day in
+ongoing public and institutional disputes over evolution.
+\autocite{numbers2006} Authority over origins shifts decisively from
+clergy and scripture to biologists and historical science.
+\autocite{ruse1979}
+
+Darwin introduces a second major decentring: Copernicus displaced
+humanity spatially; Darwin displaced humanity biologically and morally.
+Humanity is no longer the intended culmination of creation. Life, mind,
+and morality are recast as emergent consequences of blind process
+rather than divine intent, and meaning and value are no longer
+guaranteed by nature.
+
+Darwin destabilised religion and society not by denying God, but by
+\emph{transforming how origins and meaning could be known}.
 
 \subsection{Turing}
 
-% Proposing Turing as the pivot point for the decentering of human intelligence via machine cognition - which was only theoretical in his day, but becoming more and more likely today
-% What can we learn from previous de-centerings and what do we expect, what do we see happening
+Turing provides the pivot for the third decentring.\footnote{I attach
+these ideas to Turing as a prescient forerunner of artificial intelligence. The arguments
+here are primarily motivated by contemporary outcomes of advanced AI,
+with Turing serving as the conceptual hinge.} Intelligence is reframed as substrate-independent and
+process-based, and the question ``Can machines think?'' becomes an
+operational inquiry into what a system can do rather than what it is.
+\autocite{turing1950} Contemporary evidence gives this shift empirical
+force, with controlled experiments showing that large language models
+can pass standard three-party Turing tests under some conditions.
+\autocite{jones2025turing}
 
-% This third decentering reveals that **human consciousness is not a magical or inherent essence**, but an **emergent process**
-% Sara Walker and life as information processing or entropy reduction by complex systems. The substrate does not matter, rather it is the evolving information patterns they carry.
+Turing's achievement, sharpened by recent advances in AI, is not metaphysical: intelligence is
+reframed as behaviour, performance, and process. Mind is detached from
+biological substrate, and intelligence is defined functionally rather
+than essentially. Subjective experience is epistemically marginalised
+because it is inaccessible to third-person verification, and authority
+over mind shifts toward engineering and computation.
+\autocite{turing1950,floridi2014}
+
+Common sense psychology is destabilised. The intuition that thinking
+requires feeling is no longer decisive, and meaning and agency are
+externalised as observer-attributed properties rather than guaranteed
+inner essences. The disruption precedes ethical reckoning: early AI
+appears trivial or symbolic, but crisis emerges when machines perform
+roles associated with judgment, creativity, and language.
+\autocite{turing1950,floridi2014}
+
+This aligns with contemporary accounts of mind. Human consciousness is
+not a magical or inherent
+essence, but a configuration of capabilities and processes.
+\autocite{dennett1991,dehaene2014,jablonka2019} Sara Walker's work
+extends this into the physics of life, framing living systems as
+information-processing structures that reduce entropy and carry evolving
+patterns independent of substrate.\autocite{walker2024} On this view,
+life is not defined by a particular material, but by the persistence
+and evolution of informational organisation across scales. This makes
+the decentring of intelligence a question of process rather than
+essence. The
+long-term consequence is that human intelligence is revealed as one
+instantiation among many, and mind becomes an emergent property of
+organised information processing.
+
+Where Copernicus displaced us from the centre of the universe, and
+Darwin displaced us from the centre of life, Turing destabilises our sense of self, recasting mind as
+substrate‑independent computation, and \emph{transforming how intelligent life can be known}.
 
 \section{Man is Dead}
 
-% Baudrillard - The Precession of Simulacra
-% Forbidding of idols - motivated by the idea that divinity cannot be represented, but really predicting the omnipotence of the simulacra
+In Baudrillard's account of the precession of simulacra,\autocite{baudrillard1994} the idol does
+not conceal a real original but exposes its absence, triggering a crisis of meaning:
 \begin{quote}
-  the desctuctive, annihilating truth that they allow to appear -- that deep down God never existed, that only the simulacrum ever existed, even that God himself was never asnything but his own simulacrum
-\end{quote}% p. 4
+the destructive, annihilating truth that [idols] allow to appear -- that
+  deep down God never existed, that only the simulacrum ever existed,
+  even that God himself was never anything but his own simulacrum
+\end{quote}
+Applied to intelligence, AI functions as a Baudrillardian simulacrum. It does not copy
+a sacred human essence; rather, it exposes how this essence was
+always a human construct. The idol does not need to be divine for iconoclasm to follow; its mere existence is enough to collapse the divine.
 
-% Application of this idea to intelligence: once we have a simulacrum, it bevomes obvious that intelligence was never special in the first place
-% Leads to extension of Nietzsche: "man is dead" by which I mean that our idea of the expectional human was always fictional. 
-% This is not a biological claim, but a conceptual one: the modern idea of “Man” as a privileged, self-grounding subject has collapsed.
+In the wake of AI as simulacrum, I am compelled to say 
+\begin{quote}
+  Man is dead.
+\end{quote}
+Where ``God is dead''\autocite{nietzsche1882} diagnosed the collapse of transcendent foundations, AI reveals
+that the privileged human centre installed in God's place is equally untenable.
 
-%- “God is dead” is **not a statement of atheism**, but a diagnosis:
-%  - The collapse of transcendent foundations of meaning.
-%  - Humanity temporarily replaces God as the source of value and meaning.
-%- This substitution is unstable and sets the stage for the next decentering.
-% Apply this to the notion that "man is dead"
+According to Kuhn, perceptual instability signals shifting or contested frameworks.\autocite{kuhn1970}
+In that sense, contemporary public angst and debate around AI are precipitated by the imminent collapse of a
+modern fiction: the autonomous, self-grounding human subject as
+origin-point of meaning.
 
-% The consequence: we need to re-construct "man"
-
-% Nietzsche removes transcendence.
-% Baudrillard removes the final illusion of an authentic human core.
+The consequence is not nihilism. Meaning relocates from essence to
+process, and reverence becomes grounded in understanding rather than
+exemption. The reconstruction task is therefore conceptual: to re-make
+the category of the human in relational and processual terms after the
+collapse of its supposed centrality.
 
 \section{Mind-Blindness and Human Bias}
-% alert.md
-% Capability approach and ALERT Michael Levin and the utilitarian approach to intelligence
-% bias.md
-% Unexpected intelligences
-% Tiers of human bias
+
+\emph{Anthroponormativity} is a structural bias in which we treat human modes of
+thought as the default norm and discriminate against other minds on that basis.
+\autocite{dewalle2016,andrews2020} Mind blindness is a consequence, describing the failure to
+recognise intelligence when it lacks human markers such as language,
+faces, speed, or self-report.\autocite{andrews2020}
+
+We expect minds to have familiar bodies
+(morphological bias), to operate at human tempos (temporal bias), to
+explain themselves (narrative bias), to have explicit goals
+(intentional bias), and to be bounded individuals rather than systems
+(individualist bias).
+\autocite{andrews2020,godfreysmith2020,dennett1987,hutchins1995,clark2008}
+
+A wide range of ``unexpected minds'' exposes the deficiency of this bias stack by pointing
+to intelligent systems that violate our intuitions. Slime moulds
+optimise and learn without neurons.\autocite{dussutour2010} Immune systems recognise patterns
+without awareness.\autocite{levin2019} Plants and mycorrhizal networks operate at slow
+cognitive tempos.\autocite{levin2019} Ant colonies and termite mounds exhibit system-level
+intelligence.\autocite{hutchins1995,clark2008} Markets aggregate information without a unitary agent.\autocite{hutchins1995}
+Weather and climate systems probe the boundary between mind and
+physics.\autocite{clark2008} Cultural systems accumulate knowledge across generations.\autocite{clark2008,hutchins1995}
+Octopus intelligence further disrupts assumptions about unified selves
+and vertebrate-centric minds.\autocite{godfreysmith2016}
+
+Natural selection itself is an optimiser without intention, undermining
+the assumption that intelligence requires a planning subject.
+\autocite{dennett1995} This prepares the ground for the present case:
+contemporary AI becomes a mirror that reveals how our criteria for mind
+were never purely scientific.
+\autocite{turing1950}
+
+Sensitivity to other minds requires epistemic humility. Nagel's analysis
+of the limits of human perspective shows how ``what it is like'' can be
+inaccessible from the outside, yet still real.
+\autocite{nagel1974} Godfrey-Smith demonstrates how radically different
+cognitive forms can be understood without anthropocentric projection.
+\autocite{godfreysmith2016} Gunkel extends this to machine minds,
+arguing that moral status and social participation cannot be settled by
+origin alone.
+\autocite{gunkel2012}
+
+The unifying point is that intelligence lies on a spectrum—a landscape—and should be measured by what it can do, not dictated by assumptions of human centrality or divine essence.
+Contemporary capability-based empirical approaches make this practical. Levin's
+basal cognition framework and related accounts describe cognition in
+terms of capacities rather than essences.
+\autocite{levin2019,dennett1991,dehaene2014,jablonka2019} The ALERT
+scaffolding (agency, learning, embodiment, representation, temporality)
+provides a graded vocabulary for comparing minds across substrates.
+\autocite{levin2019} Agency concerns goal-directed behaviour and
+self-maintenance; learning concerns adaptation and memory; embodiment
+anchors cognition in sensorimotor coupling; representation concerns
+internal states that stand in for aspects of world or self; and
+temporality concerns integration across time scales. The point is not
+to declare consciousness present or absent, but to map which capacities
+are present and to what degree. Consciousness, on this view, is defined
+by what a system can do rather than what it is made of, and it requires
+no special ``spark'' beyond organised capacities.\autocite{dennett1991,dehaene2014}
+
+These capabilities can scale beyond individuals. Collective intelligence
+appears in cultures, institutions, and hybrid human-machine systems
+that exhibit memory, coordination, and self-models. Intelligence thus
+re-emerges at higher levels of organisation, not only within brains.
+\autocite{hutchins1995,clark2008}
 
 \section{Extreme Empathy}
-% wonder.md
-% "spark" as useful abstraction
-% Our response: extreme empathy for all minds
-% Art is a social activity perfromed by artists
+
+If decentring is the diagnosis, the appropriate response is not
+nihilism but a disciplined openness to other forms of mind.
+Demystification does not exhaust wonder; it multiplies it. Feynman
+shows how explanation adds layers of meaning rather
+than stripping them away.\autocite{feynman1999} He responds to the charge
+that science destroys beauty by noting that a flower is
+still beautiful, but understanding its cellular structure, biochemical
+machinery, evolutionary history, and physical constraints adds layers
+of awe rather than subtracting them. Awe relocates from essence to emergence.
+
+This expansion is not a rejection of the human but a
+repositioning of the human within a broader ecology of minds. Within
+this frame, the ``spark'' becomes a useful abstraction rather than a metaphysical
+essence. Respect attaches to coordination, robustness, and emergent
+complexity rather than to privileged origin.
+
+What are the implications for making art in an age of mechanical \emph{generation}?
+I argue that art is a social activity performed by artists in their communities.
+This prioritises discourse over object, where the object is a record rather than the end in itself.
+
+Culture is a distributed cognitive process rather than the output of
+isolated genius.\autocite{becker1982,bourdieu1992,csikszentmihalyi1996} 
+In light of the preceding discussion, I can reflect on a quite literal interpretation of ``cultural life'' as an instance of higher-order intelligence.
+
+\emph{Human} originated art remains compelling because
+humans are social animals who care about human lives and intentions, and
+provenance shapes response. Horton et al.\ show that labels of
+``human-made'' or ``AI-made'' can matter more than the image itself in
+judgments of creativity, value, and skill, revealing a bias toward
+human provenance independent of actual source.\autocite{horton2023}
+Yet Demmer et al.\ show that machine-generated art can still produce
+emotional responses in viewers, indicating that affective engagement is
+not limited by origin.\autocite{demmer2023}
+
+Authorship debates sharpen this. The figure of the author has
+always been a cultural function rather than a metaphysical origin.
+\autocite{barthes1967,foucault1969} Mechanical reproduction already
+challenged the aura of singular authorship, showing that meaning is
+reorganised by technical forms of production.
+\autocite{benjamin1936} Mechanical generation advances the argument.
+If art is an emergent social process, the
+question is no longer ``is it human?'' but what relationship it
+invites and what cultural life it sustains.
+\autocite{bourdieu1992}
+
+I have argued that the ``human'' was never the fixed centre we
+imagined. When art is an emergent social process, what exactly are we
+defending when we insist on human authorship?
+\autocite{barthes1967,foucault1969,benjamin1936,bourdieu1992}
+To close the loop: if intelligence and consciousness are understood in
+terms of capacities rather than essence, then the cultural process of
+art should be open to all kinds of minds. Participation can be judged
+by what systems can do within shared practices, not by what they are or
+where they come from. This does not erase human meaning; it enlarges and enriches
+the social field in which meaning is made.
+
+\section{Conclusion}
+
+I have argued for a sequence of decentrings that culminate in
+the contemporary emergence of machine cognition. This third decentring does not abolish meaning; it
+redraws the map on which meaning is located. A capability-based view of
+intelligence shows that mind is not a sacred essence but a process that
+can appear across substrates and scales. Within this frame, art appears
+less as the product of isolated genius and more as a living cultural
+process in which humans remain participants without requiring
+exclusive authority.
+
+The contemporary task is therefore not to defend ``the human'' as a
+fixed centre, but to cultivate the conceptual flexibility needed to
+recognise other minds and to sustain cultural practices that include
+them. This is the ethical and artistic challenge of collaborating with
+machines.
 
 \newpage
 \printbibliography

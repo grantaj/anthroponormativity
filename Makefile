@@ -11,6 +11,7 @@ CSS := style.css
 
 OUTDIR := docs
 HTML := $(OUTDIR)/index.html
+VERSION := 1.0
 RELEASE_DIR := docs/releases
 RELEASE_NAME := anthroponormativity-$(VERSION).pdf
 
